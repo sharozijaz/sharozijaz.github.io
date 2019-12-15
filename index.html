@@ -4,14 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="IYxRbJWZIxeRpH2i3fATapeYR-pxtXJBA4j_uJwm7i4" />
-  <meta name="google-site-verification" content="wfPMQ5NfdkF4xTf9jVQ5nOguOEUSHIFqmP1ZLGQ3d14" />
-
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <link
     href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext"
     rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="media/Single Logo.png" />
   <title>Sharoz Ijaz</title>
 </head>
@@ -20,7 +18,7 @@
   <!-- Hero Section-->
   <header class="hero">
     <!-- Main Navigation-->
-    <nav>
+    <nav >
       <div class="wrapper">
         <ul class="main-nav">
           <li><a href="#">Home</a></li>
@@ -37,8 +35,15 @@
     <!-- Headings and Intro-->
     <div class="heading-hero">
       <div class="heading-hero-1">
-        <h1 class="hero-heading-1">Hi' I am Sharoz Ijaz</h1>
-        <h2 class="hero-heading-2">I am a Front-End Developer</h2>
+        <h1 class="hero-heading-1">
+        <span>Hi'</span>
+        <span>My Name is Sharoz Ijaz</span>
+      </h1>
+        <span class="amp">&amp;</span>
+        <h2 class="hero-heading-2 letter-spacing-fix">I am a <span
+     class="txt-rotate typewriter"
+     data-period="2000"
+     data-rotate='[ "Web Developer", "Web Designer", "WordPress Designer"]'></span></h2>
       </div>
       <a href="#" class="btn">Learn More &rarr;</a>
 
@@ -55,9 +60,7 @@
 
 
   <!-- About Section-->
-
   <section class="about-section">
-
     <div class="u-center-text u-margin-bottom-medium">
       <h2 class="heading-secondary" id="about">
         About Me
@@ -67,8 +70,7 @@
     <div class="row">
       <div class="col-1-of-2">
         <p class="about-para">
-          I am <strong>Sharoz Ijaz</strong> a Full-Stack Web Developer. I can Design and Develop Modern Looking Website
-          Using Modern Technologies.
+          I am <strong>Sharoz Ijaz</strong> a <em>Self Taught</em> Full-Stack Web Developer, Designer, and Web App Developer. Developing and Designing a Websites is my Passion ❤ and i Love Doing it.
         </p>
       </div>
       <div class="col-1-of-2 circle-shape-example">
@@ -76,6 +78,7 @@
       </div>
     </div>
   </section>
+  <!-- Why Section-->
   <section class="why-me">
     <div class="u-center-text u-margin-bottom-medium">
       <h2 class="heading-secondary">
@@ -83,7 +86,7 @@
       </h2>
     </div>
     <div class="row">
-      <div class="col-1-of-4  side-repair">
+      <div class="col-1-of-4">
         <div class="feature-box">
           <img src="media/icons/fast.png" alt="fast" class="feature-box__icon icon-basic-map">
           <h3 class="heading-teritiary u-margin-bottom-small">Fast</h3>
@@ -121,6 +124,7 @@
       </div>
     </div>
   </section>
+
   <!-- Skills Section Start Here-->
   <section class="skills-section" id="portfolio">
     <div class="u-center-text u-margin-bottom-medium">
@@ -298,6 +302,65 @@
     </div>
     </div>
   </footer>
+
+  <script type="text/javascript">
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};</script>
+
 </body>
 
 </html>
