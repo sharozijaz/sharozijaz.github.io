@@ -17,9 +17,11 @@ Purple 2: #7951A8
     }
 
  /* Media Queries for Responsive Design*/
+
 @media only screen and (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 56.25%;
+    } }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
@@ -32,23 +34,25 @@ Purple 2: #7951A8
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
-@media only screen and (max-width: 56.25em) {
-    .feature-box {
-      padding: 2rem; } }
- @media only screen and (max-width: 56.25em) {
+
+ @media only screen and (max-width: 36.25em) {
       .row:not(:last-child) {
-        margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
+        margin-bottom: 12rem; } }
+  @media only screen and (max-width: 36.25em) {
     .row {
       max-width: 50rem;
-      padding: 0 3rem; } }
- @media only screen and (max-width: 56.25em) {
+      padding: 12rem; } }
+ @media only screen and (max-width: 36.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
+          margin-bottom: 12rem; } }
+    @media only screen and (max-width: 36.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
+@media only screen and (max-width: 36.25em){
+  
+}
+
     @media only screen and (max-width: 75em) {
       .form {
         width: 65%; } }
@@ -82,8 +86,16 @@ Purple 2: #7951A8
     font-weight: 200;
     letter-spacing: .1rem; }
      }
-
-
+@media only screen and (max-width: 56.25em) {
+.circle-shape-example .curve{
+  margin-right: 30%; 
+}
+}
+@media only screen and (max-width: 56.25em){
+.col-1-of-4 {
+      width: calc((100% - 3 * 6rem) / 4); }
+}
+}
 
 
  /* Media Queries for Responsive Design*/
@@ -94,9 +106,20 @@ Purple 2: #7951A8
     display: block;
     height: 0;
     visibility: hidden;
+
 }
    /*  Custom CSS Grid Settings*/
 /*Basic Grid Styles*/
+.typewriter{
+  letter-spacing: .1rem;
+  color:#7951A8; 
+}
+.amp{
+  font-size: 2rem;
+}
+.letter-spacing-fix{
+  letter-spacing: .2rem !important;
+}
 .wrapper {
     max-width: 1400px;
 }
@@ -236,7 +259,7 @@ body{
 }
 .main-nav li {
     display: inline-block;
-    margin-left: 40px;
+    margin-left:  2.5rem;
 }
 .main-nav a{
     font-size: 1.4rem;
@@ -272,7 +295,7 @@ body{
 }
 .hero-heading-1{
     display: block;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: .2rem;
    /* animation-name: moveInLeft;
@@ -381,6 +404,7 @@ body{
     padding: 5%;
     position: relative;
 
+
 }
 .about-heading{
     color:#69369E ;
@@ -399,20 +423,22 @@ body{
     padding-top: 3rem;
     padding-left: 7%;
     font-size: 1.5rem;
+    line-height: 3.5rem;
+    letter-spacing: .2rem;
 }
 .img-r{
-    height: 15rem;
+    height: .5rem;
     width: auto;
     float: right;
     padding-right: 5%;
-    border-radius: 3px;
+    border-radius:  0.1875em;
 }
 .circle-shape-example .curve { 
     height: 20rem;
     width: auto;
-    min-width: 150px;
+    min-width: 9.375rem;
   float: right;
-  margin-right:10rem; 
+  
   border-radius: 50%;
   -webkit-shape-outside:circle();
   shape-outside:circle(50% at 50% 50%);
@@ -454,7 +480,7 @@ body{
     outline: .3rem solid #69369E;
  }
     .feature-box__icon {
-        padding-bottom: 3.125em;
+      padding-bottom: 3.125rem;
       height: 7rem;
       width: auto;
       display: inline-block;
@@ -498,16 +524,16 @@ body{
         }
       }
       .img{
-          width: 100px;
-          height: 100px;
+          width: 6.25em;
+          height: 6.25em;
       }
       
       .bar{
         background-color:rgb(177, 177, 177);
-        padding: 2px;
-        border-radius: 15px;
-        margin-bottom: 5px;
-        font-size: 14px;
+        padding: 0.125em;
+        border-radius: 0.9375em;
+        margin-bottom: 0.3125em;
+        font-size: 0.875em;
         color: #FFF;
         font-weight: bold;
         text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -516,7 +542,7 @@ body{
         content:  attr(data-skill);
         background-color: #f3b0ff;
         display: inline-block;
-        padding: 5px 0 5px 10px;
+        padding: 0.3125em 0 0.3125em  0.625em;
         border-radius: inherit;
         animation: load 2s 0s;
         -webkit-animation: load 2s 0s;
@@ -535,19 +561,19 @@ body{
       }
       
       .bar.learning::before{
-        width: calc(20% - 10px);
+        width: calc(20% - 0.625em);
       }
       .bar.basic::before{
-        width: calc(40% - 10px);
+        width: calc(40% - 0.625em);
       }
       .bar.intermediate::before{
-        width: calc(60% - 10px);
+        width: calc(60% - 0.625em);
       }
       .bar.advanced::before{
-        width: calc(80% - 10px);
+        width: calc(80% - 0.625em);
       }
       .bar.expert::before{
-        width: calc(100% - 10px);
+        width: calc(100% - 0.625em);
       }
       /* Progress Bar End */
     .skills-section{
