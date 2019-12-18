@@ -1,4 +1,6 @@
- #gallery {
+ 
+/* This Code is Taken From https://codepen.io/alchatti */
+#gallery {
    display: grid;
    height: calc(100vh - 10px);
    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
