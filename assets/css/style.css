@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.logo{
+    height: 2em;
+    width: auto;
+    cursor: pointer;
+}
+.hero-section{
+    background-image: url(/assets/img/hero.svg);
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 10%;
+    background-size: cover;
+}
+.nav1{
+    list-style: none;
+    font-size: 1rem;
+    color: white;
+}
+.nav1 li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav1 li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.nav1 li a:hover {
+    color: rgb(238, 96, 96);
+}
+button{
+    padding: 9px 25px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: violet;
+}

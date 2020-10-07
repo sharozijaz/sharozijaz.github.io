@@ -1,395 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style-min.css">
-   <link rel="stylesheet" href="css/img-style.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext"
-    rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/responsive-nav.css">
-  <link rel="shortcut icon" type="image/png" href="media/Single Logo.png" />
-  <title>Sharoz Ijaz | Web Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <title>Sharoz Ijaz: Web Developer and Designer</title>
 </head>
-
 <body>
-
-  <!-- Hero Section-->
-  <header class="hero">
-    <!-- Main Navigation-->
-    <nav>
-      <div class="wrapper">
-        <ul class="main-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio" >Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="http://frostgiant.blogspot.com/">Blog</a></li>
-        </ul>
-      </div>      
-    </nav>
-    <!-- Main Navigation END-->
-    <div>
-      <img src="media/Single Logo.png" alt="Logo" class="logo">
+    <div class="hero-section">
+        <header>
+            <img src="./assets/img/logo.svg" alt="logo" class="logo">
+            <nav>
+                <ul class="nav1">
+                    <li> <a href="#aboutMe"> About Me </a></li>
+                    <li><a href="#projects"> My Work </a></li>
+                    <li><a href="#cv"> Contact Me </a></li>
+                    <li><a href="#contacts">My Resources</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="text-gray-700 body-font">
+            <div class="container mx-auto flex px-4 py-10 md:flex-row flex-col items-center">
+              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-0 font-medium text-black">Hello, I'm Sharoz Ijaz.</h1>
+                <h1 class="title-font sm:text-6xl text-5xl mb-0 font-medium text-purple-900">Web Developer</h1>
+                <p class="mb-8 leading-relaxed">Freelance Web Developer and Designer.</p>
+                <div class="flex justify-center">
+                  <button class="inline-flex text-white bg-purple-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg">See My Work</button>
+                  <button class="ml-4 inline-flex text-gray-700 bg-purple-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">Resume</button>
+                </div>
+              </div>
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="./assets/img/img=skill-all.svg">
+              </div>
+            </div>
+          </section>
+       
     </div>
-    <!-- Headings and Intro-->
-    <div class="heading-hero">
-      <div class="heading-hero-1">
-        <h1 class="hero-heading-1">
-          <span>Hi'</span>
-          <span>My Name is Sharoz Ijaz</span>
-        </h1>
-        <span class="amp">&amp;</span>
-        <h2 class="hero-heading-2 letter-spacing-fix">I am a <span class="txt-rotate typewriter" data-period="2000"
-            data-rotate='[ "Web Developer", "Web Designer", "WordPress Designer"]'></span></h2>
-      </div>
-      <a href="#about" class="btn">Learn More &rarr;</a>
-
-    </div>
-    <!-- Headings and Intro END-->
-    <!-- Heading Images -->
-    <div class="heading-images-vector-1">
-      <img src="media/images/img-wheel.png" alt="img-wheel" class="img-wheel-1">
-      <img src="media/images/img-web.png" alt="img-wheel" class="img-web">
-    </div>
-    <!-- Heading Images -->
-  </header>
-  <!-- Hero Section END-->
-
-
-  <!-- About Section-->
-  <section class="about-section">
-    <div class="u-center-text u-margin-bottom-medium">
-      <h2 class="heading-secondary" id="about">
-        About Me
-      </h2>
-    </div>
-
-    <div class="row">
-      <div class="col-1-of-2">
-        <p class="about-para">
-          I am <strong>Sharoz Ijaz</strong> a <em>Self Taught</em> Full-Stack Web Developer, Designer, and Web App
-          Developer. Developing and Designing a Websites is my Passion ❤ and i Love Doing it.
-        </p>
-      </div>
-      <div class="col-1-of-2 circle-shape-example">
-        <img src="media/images/IMG-20190720-WA0020_edited.jpg" alt="Code" class="curve">
-      </div>
-    </div>
-  </section>
-  <!-- Why Section-->
-  <section class="why-me">
-    <div class="u-center-text u-margin-bottom-medium">
-      <h2 class="heading-secondary">
-        Why Me?
-      </h2>
-    </div>
-    <div class="row">
-      <div class="col-1-of-4">
-        <div class="feature-box">
-          <img src="media/icons/fast.png" alt="fast" class="feature-box__icon icon-basic-map">
-          <h3 class="heading-teritiary u-margin-bottom-small">Fast</h3>
-          <p class="feature-box__text">
-            Fast and Lag Free Website is My Highest Priority.
-          </p>
-        </div>
-      </div>
-      <div class="col-1-of-4">
-        <div class="feature-box">
-          <img src="media/icons/responsive.png" alt="fast" class="feature-box__icon icon-basic-map">
-          <h3 class="heading-teritiary u-margin-bottom-small">Responsive</h3>
-          <p class="feature-box__text">
-            I Design Websites Which are Responsive and Compatible With All the Devices.
-          </p>
-        </div>
-      </div>
-      <div class="col-1-of-4">
-        <div class="feature-box">
-          <img src="media/icons/success.png" alt="fast" class="feature-box__icon icon-basic-map">
-          <h3 class="heading-teritiary u-margin-bottom-small">User-Friendly </h3>
-          <p class="feature-box__text">
-            Easy to Use Navigation for a Better User Experience.
-          </p>
-        </div>
-      </div>
-      <div class="col-1-of-4">
-        <div class="feature-box">
-          <img src="media/icons/web-design.png" alt="fast" class="feature-box__icon icon-basic-map">
-          <h3 class="heading-teritiary u-margin-bottom-small">Dynamic</h3>
-          <p class="feature-box__text">
-            I Don't Like Static Websites, I Love to Give Them Life.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section Start Here-->
-  <section class="skills-section" id="portfolio">
-    <div class="u-center-text u-margin-bottom-medium">
-      <h2 class="heading-secondary">
-        My Skills & Tools
-      </h2>
-    </div>
-    <div class="row">
-      <div class="col-1-of-3">
-        <div class="container">
-          <h1>Front End</h1>
-          <div class="bar advance expert" data-skill="HTML5"></div>
-          <div class="bar advance expert" data-skill="CSS3"></div>
-          <div class="bar medium advanced" data-skill="JavaScript"></div>
-          <div class="bar advance expert" data-skill="SASS(SCSS)"></div>
-          <div class="bar beginner basic" data-skill="React.JS"></div>
-          <div class="bar advance expert" data-skill="WordPress"></div>
-
-        </div>
-      </div>
-      <div class="col-1-of-3">
-        <img src="media/images/undraw_code_review_l1q9.png" alt="img" class="skill-img">
-      </div>
-      <div class="col-1-of-3">
-        <div class="container">
-          <h1>Back-End</h1>
-          <div class="bar beginner basic" data-skill="MongoDB"></div>
-          <div class="bar advance expert" data-skill="Git/GitHub"></div>
-          <div class="bar beginner basic" data-skill="API"></div>
-          <div class="bar beginner basic" data-skill="Express.JS"></div>
-          <div class="bar medium advanced" data-skill="Node.JS"></div>
-        </div>
-        <div class="container">
-          <h1>Extras</h1>
-          <div class="bar beginner basic" data-skill="Affinity Designer"></div>
-          <div class="bar advance expert" data-skill="Adobe XD"></div>
-        </div>
-      </div>
-    </div>
-    
-  </section>
-
-  <!-- ShowCase Section-->
-  <section class="showcase">
-    <div class="u-center-text u-margin-bottom-medium">
-      <h2 class="heading-secondary showcase-heading">
-        ShowCase
-      </h2>
-    </div>
-    <div class="row">
-     <div id="gallery">
-        <div><img src="media/images/img1.png" /><a href="#lightbox-1"></a></div>
-        <div><img src="media/images/img2.png" /><a href="#lightbox-2"></a></div>
-        <div><img src="media/images/img3.png" /><a href="#lightbox-3"></a></div>
-        <div><img src="media/images/img4.png" /><a href="#lightbox-4"></a></div>
-        <div><img src="media/images/img5.png" /><a href="#lightbox-5"></a></div>
-        <div><img src="media/images/img6.png" /><a href="#lightbox-6"></a></div>
-        <div><img src="media/images/img7.png" /><a href="#lightbox-7"></a></div>
-        <div><img src="media/images/img8.png" /><a href="#lightbox-8"></a></div>
-        <div><img src="media/images/img9.png" /><a href="#lightbox-12"></a></div>
-        <div><img src="media/images/img10.png" /><a href="#lightbox-13"></a></div>
-        <div><img src="media/images/Screenshot_3.png" /><a href="#lightbox-10"></a></div>
-        <div><img src="media/images/Screenshot_14_800x600.png" /><a href="#lightbox-11"></a></div>
-        
-    </div>
-    <div class="lightbox" id="lightbox-1">
-        <div class="content"><img src="media/images/img1.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-2">
-        <div class="content"><img src="media/images/img2.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-3">
-        <div class="content"><img src="media/images/img3.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-4">
-        <div class="content"><img src="media/images/img4.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-5">
-        <div class="content"><img src="media/images/img5.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-6">
-        <div class="content"><img src="media/images/img6.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-7">
-        <div class="content"><img src="media/images/img7.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-8">
-        <div class="content"><img src="media/images/img8.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-10">
-        <div class="content"><img src="media/images/Screenshot_3.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-    <div class="lightbox" id="lightbox-11">
-        <div class="content"><img src="media/images/Screenshot_14_800x600.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-   <div class="lightbox" id="lightbox-12">
-        <div class="content"><img src="media/images/img9.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-     <div class="lightbox" id="lightbox-13">
-        <div class="content"><img src="media/images/img10.png" />
-            <a class="close" href="#gallery"></a></div>
-    </div>
-
-    </div>
-  </section>
-  <!-- Form Section-->
-  <section class="form  clearfix" id="contact">
-    <div class="u-center-text u-margin-bottom-medium">
-      <h2 class="heading-secondary">
-        Contact Me
-      </h2>
-    </div>
-    <div class="row">
-      <div class="col-1-of-2">
-        <div class="form-con">
-          <form action="https://formspree.io/meqodyke" method="POST">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="_replyto" placeholder="Enter Your Email">
-
-
-
-            <label for="subject">Message</label>
-            <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit" class="btn btn-submit">
-          </form>
-        </div>
-      </div>
-      <div class="col-1-of-2 form-position">
-        <div class="composition">
-          <img src="media/images/form1.png" alt="Photo One" class="composition__photo composition__photo--p1">
-          <img src="media/images/form2.png" alt="Photo Two" class="composition__photo composition__photo--p2">
-          <img src="media/images/form3.png" alt="Photo Three" class="composition__photo composition__photo--p3">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-
-    <div class="row">
-      <div class="col-1-of-2">
-        <div class="footer__logo-box">
-          <img src="media/Single Logo.png" alt="Full Logo" class="footer__logo">
-        </div>
-
-      </div>
-      <div class="col-1-of-2">
-        <p class="footer__copyright">
-          Property of <a href="https://www.instagram.com/sharozijaz/" class="footer__link">Sharoz Ijaz</a>.
-          All Rights Reserved to <a href="https://www.instagram.com/sharozijaz/" class="footer__link">Sharoz Ijaz</a>
-          and The Logo is Also The Property of Sharoz Ijaz.
-        </p>
-        <div>
-          <a href="https://www.facebook.com/sharoz.04" class="icon-social " target="_blank"><img
-              src="media/images/facebook.png" alt="facebook" class="social-id "></a>
-          <a href="https://twitter.com/sharozijaz" class="icon-social" target="_blank"><img
-              src="media/images/twitter.png" alt="facebook" class="social-id"></a>
-          <a href="https://www.instagram.com/sharozijaz" class="icon-social" target="_blank"><img
-              src="media/images/instagram.png" alt="facebook" class="social-id"></a>
-          <a href="http://fiverr.com/sharoz_ijaz_dev/" class="icon-social" target="_blank"><img
-              src="media/images/iconfinder_fiverr_3069760.png" alt="facebook" class="social-id"></a>
-          <a href="https://github.com/sharozijaz" class="icon-social" target="_blank"><img src="media/images/github.png"
-              alt="facebook" class="social-id"></a>
-
-        </div>
-      </div>
-    </div>
-    </div>
-  </footer>
-  
-  <script type="text/javascript">
-    var TxtRotate = function (el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
-
-    TxtRotate.prototype.tick = function () {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
-
-      if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-
-      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-      var that = this;
-      var delta = 300 - Math.random() * 100;
-
-      if (this.isDeleting) { delta /= 2; }
-
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-      }
-
-      setTimeout(function () {
-        that.tick();
-      }, delta);
-    };
-
-    window.onload = function () {
-      var elements = document.getElementsByClassName('txt-rotate');
-      for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtRotate(elements[i], JSON.parse(toRotate), period);
-        }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".txt-rotate > .wrap {border - right: 0.08em solid #666 }";
-      document.body.appendChild(css);
-    };</script>
-
-  <script type="text/javascript">
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 5000); // Change image every 2 seconds
-    }
-  </script>
+    <script src="/assets/app.js"></script>
 </body>
-
 </html>
